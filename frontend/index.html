@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html onclick="refreshPage()">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>People</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Ivan on Tech Academy Coin Flip Game</h1>
+        <p class="lead">Play only when drinking black coffee, no milk or sugar involved </p>
+      </div>
+    </div>
+
+<div class="container">
+
+<div class ="row">
+        <div class ="col"style="vertical-align: middle;">
+          <div>
+        <h2 class="text-center">Winning Chance</h2>
+      </div>
+      <div>
+        <p class="text-center" style="font-size: large;" >50 % </p>
+      </div>
+      <div>
+        <h2 class="text-center">Your winning rate</h2>
+      </div>
+      <div>
+        <p class="text-center" style="font-size: large;">1.9 <span id="winning_rate"></span></p>
+      </div>
+      <div>
+        <p class="text-center" style="font-size: small;" >You will win <span id="amount_to_win">1 ETH</span> </p>
+      </div>
+      <div>
+        <h2 class="text-center">Jackpot</h2>
+      </div>
+      <div>
+        <p class="text-center" style="font-size: large;"> <span id="jackpot"></span></p>
+      </div>
+      <div>
+        <center>
+        <button type="button" id="sendfund" class="btn btn-primary btn-lg" style ="width: 170px;">Donate Funds</button>
+      </center>
+      </div>
+
+
+      </div>
+
+  <div class="col" style="vertical-align: middle;">
+    <div class="row">
+        <div class="col">
+          <center>
+          <button style="border:none;background:none;">
+          <img border="0" src="ivan.jpg" id="ivan" width="100" height="100" />
+</button>
+</center>
+        </div>
+        <div class="col"text-align:center>
+          <center>
+          <button style="border:none;background:none;">
+            <img border="0" src="filip.jpg" id="filip"width="100" height="100" />
+</button>
+</center>
+        </div>
+</div>
+<div>
+  <p class="text-center" style="font-size: small;"> Choose Ivan or Filip</p>
+</div>
+<div>
+<form>
+  <div class="form-row text center">
+    <div class="col-xs text center"style="margin:auto">
+      <input type="text" id="AmountToBet" class="form-control form-control-lg " style="text-align:center" placeholder="1 ETH">
+    </div>
+  </form>
+</div>
+<div>
+  <p class="text-center" style="font-size: small;"> Amount of ETH to bet</p>
+</div>
+
+<center>
+        <button type="button" id="play" class="btn btn-primary btn-lg" style ="width: 110px;">Play</button>
+        <!--<button type="button" id="withdrawUser" class="btn btn-primary btn-lg" style ="width: 190px;">Claim your prize</button>-->
+        <button class="btn btn-primary btn-lg" id="spinner_button" style ="width: 180px;">Claim your Prize
+  <!--<span class="spinner-grow spinner-grow-sm" role ="status" id="spinner"></span>-->
+  </button>
+        <!--  <button class="btn btn-primary btn-lg" type="button" disabled style ="width: 200px;">
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>-->
+
+      </center>
+      <div>
+        <p class="text-center" style="font-size: large;"> <span id="user_balance"></span></p>
+      </div>
+      </div>
+
+      <div>
+    <h2 class="text-center" id ="text_win"></h2>
+  </div>
+
+
+    </div>
+
+    </div>
+  </div>
+
+
+
+  </body>
+</html>
